@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ClockUpdater : MonoBehaviour
 {
@@ -10,33 +12,40 @@ public class ClockUpdater : MonoBehaviour
     // Text Labels
     public TextMeshProUGUI timeText;
 
+    public TextMeshProUGUI currentSeasonText;
     public TextMeshProUGUI currentYearText;
     public TextMeshProUGUI currentMonthText;
     public TextMeshProUGUI currentDayText;
 
 
     // Display Icons
-    public GameObject moon;
-    public GameObject sun;
+    public TextMeshProUGUI nightText;
+    public TextMeshProUGUI dayText;
 
     void Start()
     {
         InvokeRepeating("UpdateClock", 1f, clock.secondSpeed);
     }
 
+    void Update()
+    {
+
+    }
+
     private void UpdateClock()
     {
-        if (clock.night == true)
+        if (clock.night)
         {
-            sun.SetActive(false);
-            moon.SetActive(true);
+            dayText.enabled = false;
+            nightText.enabled = true;
         }
         else
         {
-            sun.SetActive(true);
-            moon.SetActive(false);
+            dayText.enabled = true;
+            nightText.enabled = false;
         }
 
+       
         currentYearText.text = clock.yy.ToString();
         currentMonthText.text = clock.month.monthName;
         currentDayText.text = clock.days.ToString();

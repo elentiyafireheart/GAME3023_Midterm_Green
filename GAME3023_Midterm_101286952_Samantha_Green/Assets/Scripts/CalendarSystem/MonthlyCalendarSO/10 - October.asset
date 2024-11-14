@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 10 - October
   m_EditorClassIdentifier: 
   monthName: October
-  numberOfDays: 31
+  numberOfDays: 28

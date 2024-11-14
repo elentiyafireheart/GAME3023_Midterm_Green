@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 07 - July
   m_EditorClassIdentifier: 
   monthName: July
-  numberOfDays: 31
+  numberOfDays: 28

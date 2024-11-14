@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89aac03bfd2eeab4497ac5143bd366c0, type: 3}
-  m_Name: 04 - Winter
+  m_Script: {fileID: 11500000, guid: bd173c844985018418dcef7b665f2251, type: 3}
+  m_Name: 02 - Summer
   m_EditorClassIdentifier: 
-  monthName: Winter
-  numberOfDays: 28
+  seasonName: 
+  numberOfDays: 0

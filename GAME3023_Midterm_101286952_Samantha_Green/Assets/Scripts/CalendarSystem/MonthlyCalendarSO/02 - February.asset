@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 02 - February
   m_EditorClassIdentifier: 
   monthName: February
-  numberOfDays: 0
+  numberOfDays: 28

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 08 - August
   m_EditorClassIdentifier: 
   monthName: August
-  numberOfDays: 31
+  numberOfDays: 28

@@ -17,12 +17,15 @@ public class TimeClock : MonoBehaviour
     public int mm;
     public bool night = false;
 
+    
     public float secondSpeed;
 
     public Light2D globalLight;
-    //public Light2D indoorLight;
-
+    public Light2D playerLight;
     int hoursPassed;
+
+    //public SeasonObject[] scriptableSeasons = new SeasonObject[4];
+    //public SeasonObject seasons;
 
     void Start()
     {
@@ -42,15 +45,15 @@ public class TimeClock : MonoBehaviour
 
         if (night)
         {
-            targetIntensity = 0.95f;
+            targetIntensity = 0.1f;
             globalLight.intensity = Mathf.Lerp(globalLight.intensity, targetIntensity, Time.deltaTime * 0.2f);
-            //indoorLight.intensity = Mathf.Lerp(indoorLight.intensity, 0f, Time.deltaTime * 1f);
+            playerLight.intensity = Mathf.Lerp(playerLight.intensity, 1f, Time.deltaTime * 1f);
         }
         else
         {
-            targetIntensity = 0.1f;
+            targetIntensity = 0.95f;
             globalLight.intensity = Mathf.Lerp(globalLight.intensity, targetIntensity, Time.deltaTime * 0.2f);
-            //indoorLight.intensity = Mathf.Lerp(indoorLight.intensity, 1f, Time.deltaTime * 1f);
+            playerLight.intensity = Mathf.Lerp(playerLight.intensity, 0f, Time.deltaTime * 1f);
         }
     }
 

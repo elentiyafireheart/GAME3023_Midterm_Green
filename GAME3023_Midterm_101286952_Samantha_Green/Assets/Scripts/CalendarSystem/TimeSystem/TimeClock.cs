@@ -20,9 +20,9 @@ public class TimeClock : MonoBehaviour
     public float secondSpeed;
 
     public Light2D globalLight;
-    public Light2D houseLight;
+    public Light2D indoorLight;
 
-    private int hoursPassed;
+    public int hoursPassed;
 
     void Start()
     {
@@ -42,21 +42,22 @@ public class TimeClock : MonoBehaviour
 
         if (night)
         {
-            targetIntensity = 0.1f;
+            targetIntensity = 0.95f;
             globalLight.intensity = Mathf.Lerp(globalLight.intensity, targetIntensity, Time.deltaTime * 0.2f);
-            houseLight.intensity = Mathf.Lerp(houseLight.intensity, 1f, Time.deltaTime * 1f);
+            indoorLight.intensity = Mathf.Lerp(indoorLight.intensity, 0f, Time.deltaTime * 1f);
         }
         else
         {
-            targetIntensity = 0.95f;
+            targetIntensity = 0.1f;
             globalLight.intensity = Mathf.Lerp(globalLight.intensity, targetIntensity, Time.deltaTime * 0.2f);
-            houseLight.intensity = Mathf.Lerp(houseLight.intensity, 0f, Time.deltaTime * 1f);
+            indoorLight.intensity = Mathf.Lerp(indoorLight.intensity, 1f, Time.deltaTime * 1f);
         }
     }
 
     public void TimePasses()
     {
         mm++;
+
         if (mm > 59)
         {
             mm = 0;

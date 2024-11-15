@@ -24,9 +24,6 @@ public class TimeClock : MonoBehaviour
     public Light2D playerLight;
     int hoursPassed;
 
-    //public SeasonObject[] scriptableSeasons = new SeasonObject[4];
-    //public SeasonObject seasons;
-
     void Start()
     {
         month = scriptableMonths[1];

@@ -8,5 +8,6 @@ public class MonthObject : ScriptableObject
 {
 
     public string monthName;
+    public string seasonType;
     public int numberOfDays;
 }

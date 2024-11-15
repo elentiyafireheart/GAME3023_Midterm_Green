@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89aac03bfd2eeab4497ac5143bd366c0, type: 3}
-  m_Name: 04 - April
+  m_Name: 11 - November
   m_EditorClassIdentifier: 
-  monthName: April
-  numberOfDays: 28
+  monthName: NOVEMBER
+  seasonType: FALL
+  numberOfDays: 30

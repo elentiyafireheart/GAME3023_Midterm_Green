@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89aac03bfd2eeab4497ac5143bd366c0, type: 3}
   m_Name: 05 - May
   m_EditorClassIdentifier: 
-  monthName: May
+  monthName: MAY
+  seasonType: SPRING
   numberOfDays: 28

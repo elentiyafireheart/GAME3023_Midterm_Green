@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91281c15c68f12f42b3e4f3936e01d15, type: 3}
   m_Name: Snowy Festival
   m_EditorClassIdentifier: 
-  eventName: 
-  triggerMonth: 
-  triggerDay: 0
-  endDay: 0
-  eventPrefab: {fileID: 0}
-  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  eventName: Snowy Festival
+  triggerSeason: Winter
+  triggerMonth: February
+  triggerDay: 24
+  endDay: 25
+  eventPrefab: {fileID: 7600004435939241541, guid: 89ce6e129f8edea489fa5a0d145383b2, type: 3}
+  highlightColor: {r: 0.66112494, g: 0.90027887, b: 0.9245283, a: 1}

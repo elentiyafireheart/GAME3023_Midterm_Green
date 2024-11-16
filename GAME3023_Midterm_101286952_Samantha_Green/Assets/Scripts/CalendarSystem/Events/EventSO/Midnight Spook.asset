@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91281c15c68f12f42b3e4f3936e01d15, type: 3}
   m_Name: Midnight Spook
   m_EditorClassIdentifier: 
-  eventName: 
-  triggerSeason: 
-  triggerDay: 0
-  endDay: 0
-  eventPrefab: {fileID: 0}
-  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  eventName: Midnight Spook
+  triggerSeason: Fall
+  triggerMonth: October
+  triggerDay: 7
+  endDay: 7
+  eventPrefab: {fileID: 3435232912028627355, guid: 9625ce46196d60d45bb4ca3a7d7af385, type: 3}
+  highlightColor: {r: 0, g: 0, b: 0, a: 1}

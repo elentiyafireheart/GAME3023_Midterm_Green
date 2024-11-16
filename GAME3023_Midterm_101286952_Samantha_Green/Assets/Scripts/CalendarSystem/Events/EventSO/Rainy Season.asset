@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventName: Rainy Season
   triggerSeason: Spring
+  triggerMonth: May
   triggerDay: 1
   endDay: 7
   eventPrefab: {fileID: 7683839269172794026, guid: 2cb6158f3cd3c6e4b898096f40c1a4b7, type: 3}

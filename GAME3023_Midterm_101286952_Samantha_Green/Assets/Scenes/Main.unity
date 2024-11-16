@@ -122,37 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &15446359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 15446360}
-  m_Layer: 0
-  m_Name: RainySeasonPrefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &15446360
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15446359}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.381375, y: 9.189604, z: -25.310612}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &22896814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2977,7 +2946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f54f41d3bc6c92047995509cdc9d8478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventObjectData: {fileID: 11400000, guid: 401f21558901c0a4cb07f673c7a87d9a, type: 2}
+  eventObjectData: {fileID: 11400000, guid: 6bc93c97a1e02bd4ca0197bf0966b14e, type: 2}
   clock: {fileID: 2085167789}
   timeText: {fileID: 946746508}
   currentYearText: {fileID: 1209437258}
@@ -3186,71 +3155,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f09ba5d5baf8b142a7f3b879d15e8d9, type: 3}
---- !u!1001 &4928953086830229655
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 457446690545449307, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_Name
-      value: Snow
-      objectReference: {fileID: 0}
-    - target: {fileID: 457446690545449307, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.8589885
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -25.04705
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1800322506653357120, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5605418875406213959, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9da5e287e79e37942ae6f2cf36f2297d, type: 3}
 --- !u!1001 &6041827971482951326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3384,5 +3288,3 @@ SceneRoots:
   - {fileID: 564924743}
   - {fileID: 57444692}
   - {fileID: 2085167790}
-  - {fileID: 4928953086830229655}
-  - {fileID: 15446360}

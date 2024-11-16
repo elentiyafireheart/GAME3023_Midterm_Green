@@ -10,12 +10,10 @@ using UnityEngine;
 
 public class EventObject : ScriptableObject
 {
-   // public TimeClock time;
-   // public MonthObject monthObject;
-
     [Header("Date and Time Settings")]
     public string eventName;
     public string triggerSeason;
+    public string triggerMonth;
     public int triggerDay;
     public int endDay;
 
@@ -37,22 +35,21 @@ public class EventObject : ScriptableObject
 
     public bool IsEventTriggered(int currentDay, string currentSeason)
     {
-        // Event triggers when the current day is within the start and end days, and season matches
         if (currentDay >= triggerDay && currentDay <= endDay &&
             string.Equals(currentSeason, triggerSeason, StringComparison.OrdinalIgnoreCase))
         {
-            return true;  // Event should trigger on this day
+            return true;  
         }
-        return false;  // Event does not trigger
+        return false;  
     }
 
     public bool IsEventEnded(int currentDay, string currentSeason)
     {
         if (currentDay > endDay && string.Equals(currentSeason, triggerSeason, StringComparison.OrdinalIgnoreCase))
         {
-            return true;  // Event has ended
+            return true;  
         }
-        return false;  // Event has not ended
+        return false; 
     }
 
     public void TriggerEvent(CalendarManager calendarManager)
@@ -60,11 +57,11 @@ public class EventObject : ScriptableObject
         int currentDay = calendarManager.clock.days;
         string currentSeason = calendarManager.clock.month.seasonType;
 
-        if (IsEventTriggered(currentDay, currentSeason))  // Check if event should trigger
+        if (IsEventTriggered(currentDay, currentSeason))
         {
             Debug.Log($"It is the day of your event: {eventName}!");
 
-            // Activate the event prefab
+            
             if (eventPrefab != null)
             {
                 eventPrefab.SetActive(true);
@@ -76,7 +73,7 @@ public class EventObject : ScriptableObject
         }
         else
         {
-            // Deactivate the event prefab if it's not triggered today
+           
             if (eventPrefab != null)
             {
                 eventPrefab.SetActive(false);
@@ -88,7 +85,7 @@ public class EventObject : ScriptableObject
         {
             if (eventPrefab != null)
             {
-                eventPrefab.SetActive(false);  // Deactivate prefab when event ends
+                eventPrefab.SetActive(false); 
             }
             Debug.Log($"The event {eventName} has ended.");
         }
@@ -98,12 +95,10 @@ public class EventObject : ScriptableObject
     {
         if (IsEventTriggered(currentDay, currentSeason))
         {
-            // If the current day is part of this event, highlight it with the event's color
             dayText.color = highlightColor;
         }
         else
         {
-            // If it's not an event day, set it to white (non-event days)
             dayText.color = Color.white;
         }
     }

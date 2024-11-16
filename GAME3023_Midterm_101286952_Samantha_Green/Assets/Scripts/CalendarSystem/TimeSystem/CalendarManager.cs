@@ -10,7 +10,6 @@ public class CalendarManager : MonoBehaviour
 {
     public EventObject eventObjectData;
     public TimeClock clock;
-    public EventManager eventManager;
 
     [Header("Text Labels for UI")]
     public TextMeshProUGUI timeText;
@@ -35,7 +34,6 @@ public class CalendarManager : MonoBehaviour
 
     void Start()
     {
-        eventManager = FindObjectOfType<EventManager>();
 
         if (dayPanels.Count == 0 && calendarPrefab != null)
         {
@@ -59,8 +57,6 @@ public class CalendarManager : MonoBehaviour
 
     private void Update()
     {
-        eventManager.UpdateEvents();
-        eventManager.HighlightEventDays(clock.days, clock.month.seasonType);
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -212,13 +208,12 @@ public class CalendarManager : MonoBehaviour
     }
 
     private void TriggerEvent()
-    {// Debug log showing when the event is triggered, with the current date and month
+    {
         Debug.Log($"Event triggered: {eventObjectData.eventName} on {eventObjectData.GetCurrentDate(clock.days, clock.month.monthName)} in {clock.month.monthName}");
-
-        // Check if the event is triggered by comparing the current day and month with the event's trigger day and month
+        
         if (eventObjectData.IsEventTriggered(clock.days, clock.month.monthName))
         {
-            // Event is triggered, show its prefab
+          
             if (eventObjectData.eventPrefab != null)
             {
                 eventObjectData.eventPrefab.SetActive(true);  // Show the event's prefab

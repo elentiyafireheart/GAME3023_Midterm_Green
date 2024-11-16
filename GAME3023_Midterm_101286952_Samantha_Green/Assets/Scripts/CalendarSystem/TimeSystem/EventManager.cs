@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EventManager : MonoBehaviour
@@ -44,7 +45,6 @@ public class EventManager : MonoBehaviour
         {
             if (eventObject != null)
             {
-                // Check if this event is triggered on the current day
                 eventObject.HighlightEventDay(currentDay, currentSeason, calendarManager.GetDayText(currentDay));
             }
         }

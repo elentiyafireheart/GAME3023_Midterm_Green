@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91281c15c68f12f42b3e4f3936e01d15, type: 3}
   m_Name: Year's Renewal
   m_EditorClassIdentifier: 
-  eventName: 
-  triggerMonth: 
-  triggerDay: 0
-  endDay: 0
-  eventPrefab: {fileID: 0}
-  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  eventName: Year's Renewal
+  triggerSeason: Winter
+  triggerMonth: December
+  triggerDay: 31
+  endDay: 31
+  eventPrefab: {fileID: 6512352224108773129, guid: 51a32e4d07e118646be7a340fa66b4f9, type: 3}
+  highlightColor: {r: 0.61799526, g: 0, b: 1, a: 1}

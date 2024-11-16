@@ -10,6 +10,7 @@ public class CalendarManager : MonoBehaviour
 {
     public EventObject eventObjectData;
     public TimeClock clock;
+    public EventManager eventManager;
 
     [Header("Text Labels for UI")]
     public TextMeshProUGUI timeText;
@@ -28,12 +29,14 @@ public class CalendarManager : MonoBehaviour
 
     [Header("Prefabs for Calender")]
     public GameObject calendarPrefab;
-    public List<GameObject> dayPanels;
     private int previousDay = -1;
     private MonthObject previousMonth;
+    public List<GameObject> dayPanels;
 
     void Start()
     {
+        eventManager = FindObjectOfType<EventManager>();
+
         if (dayPanels.Count == 0 && calendarPrefab != null)
         {
             // Populate the dayPanels list from the prefab
@@ -54,8 +57,11 @@ public class CalendarManager : MonoBehaviour
         HighlightCurrentDay();
     }
 
-    void Update()
+    private void Update()
     {
+        eventManager.UpdateEvents();
+        eventManager.HighlightEventDays(clock.days, clock.month.seasonType);
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             OpenCalendar();
@@ -124,7 +130,11 @@ public class CalendarManager : MonoBehaviour
         timeText.text = $"{hours}:{minutes}";
     }
 
- 
+    public TMP_Text GetDayText(int day)
+    {
+        // Assuming you have a way to get day text based on the current day
+        return dayPanels[day].GetComponentInChildren<TMP_Text>();  // Adjust this as per your setup
+    }
 
     private void HighlightCurrentDay()
     {

@@ -1,0 +1,8 @@
+Root Games.(2023, November 20) "SCRIPTABLE OBJECTS and EVENTS in Unity" [Video].
+https://www.youtube.com/watch?v=W91QkppPpHI&t=322s
+
+Mirza. (2022, January 8) "Snow Particle System Tutorial for Unity in just 2 Minutes" [Video].
+https://www.youtube.com/watch?v=T_8cPlpTr90
+
+RayznGames. (2022, June 24) "Unity - Creating a Day/Night cycle + Calendar System 2D - Live Coding" [Video].
+https://www.youtube.com/watch?v=cYqiJEuw2vU&t=1122s

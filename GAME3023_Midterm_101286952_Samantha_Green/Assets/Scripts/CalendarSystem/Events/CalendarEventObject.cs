@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class GameEvent : ScriptableObject
+public class CalendarEventObject : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

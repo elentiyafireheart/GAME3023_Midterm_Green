@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91281c15c68f12f42b3e4f3936e01d15, type: 3}
+  m_Name: Rainy Season
+  m_EditorClassIdentifier: 
+  eventName: Rainy Season
+  triggerSeason: Spring
+  triggerDay: 1
+  endDay: 7
+  eventPrefab: {fileID: 7683839269172794026, guid: 2cb6158f3cd3c6e4b898096f40c1a4b7, type: 3}
+  highlightColor: {r: 0, g: 0.3256297, b: 1, a: 1}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "MonthName", menuName = "ScriptableObjects/MonthData")]
+[CreateAssetMenu(fileName = "MonthName", menuName = "MonthlyCalendar/MonthData")]
 
 public class MonthObject : ScriptableObject
 {

@@ -9,8 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd173c844985018418dcef7b665f2251, type: 3}
-  m_Name: 01 - Spring
+  m_Script: {fileID: 11500000, guid: 91281c15c68f12f42b3e4f3936e01d15, type: 3}
+  m_Name: Summer Solstice
   m_EditorClassIdentifier: 
-  seasonName: Spring
-  numberOfDays: 0
+  eventName: Summer Solstice
+  triggerSeason: Summer
+  triggerDay: 4
+  endDay: 4
+  eventPrefab: {fileID: 0}
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}

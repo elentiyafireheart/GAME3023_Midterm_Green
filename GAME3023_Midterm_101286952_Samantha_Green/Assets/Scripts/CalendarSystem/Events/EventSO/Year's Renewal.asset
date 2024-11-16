@@ -15,7 +15,7 @@ MonoBehaviour:
   eventName: Year's Renewal
   triggerSeason: Winter
   triggerMonth: December
-  triggerDay: 31
-  endDay: 31
+  triggerDay: 28
+  endDay: 28
   eventPrefab: {fileID: 6512352224108773129, guid: 51a32e4d07e118646be7a340fa66b4f9, type: 3}
   highlightColor: {r: 0.61799526, g: 0, b: 1, a: 1}

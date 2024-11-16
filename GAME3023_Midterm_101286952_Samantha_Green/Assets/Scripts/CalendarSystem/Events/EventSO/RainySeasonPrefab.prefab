@@ -4969,6 +4969,7 @@ GameObject:
   - component: {fileID: 7683839269172794027}
   - component: {fileID: 7683839269172794029}
   - component: {fileID: 7683839269172794028}
+  - component: {fileID: 2227687450628875370}
   m_Layer: 0
   m_Name: RainySeasonPrefab
   m_TagString: Untagged
@@ -9812,6 +9813,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &2227687450628875370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683839269172794026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c151bdfabbf0c6840870e89bee31931a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7683839269457303232
 GameObject:
   m_ObjectHideFlags: 0

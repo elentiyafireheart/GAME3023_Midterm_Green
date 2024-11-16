@@ -16,6 +16,6 @@ MonoBehaviour:
   triggerSeason: Summer
   triggerMonth: August
   triggerDay: 4
-  endDay: 4
+  endDay: 5
   eventPrefab: {fileID: 537628357980056720, guid: 5e2054cc4f76f904b950f404fe6b158b, type: 3}
   highlightColor: {r: 1, g: 0.72704273, b: 0, a: 1}
